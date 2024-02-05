@@ -1,0 +1,14 @@
+<p>heroe works!</p>
+<p>Nombre: {{name}}</p>
+<p>Edad: {{age}}</p>
+<button *ngIf="name!=='Spiderman'" (click)="cambiarNombre()"
+>Cambiar nombre </button>
+<button (click)="cambiarEdad()">Agregar edad </button>
+<div>
+<ul>
+
+    <li *ngFor="let element of lista" class="list-group-item"> {{element}}</li>
+
+</ul>
+
+</div>
