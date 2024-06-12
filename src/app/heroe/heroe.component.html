@@ -1,4 +1,12 @@
 <p>heroe works!</p>
+<div class="dropzone">
+<input type="file" #fileDropRef id="fileDropRef" multiple (change)="subirArchivo($event.target.files)" />
+<img src="./file-icon.png" alt="archivo">
+<h3> Arrastre su archivo aqui</h3>
+<h3>o</h3>
+<label fror="fileDropRef"> Seleccione su archivo </label>
+</div>
+
 <p>Nombre: {{name}}</p>
 <p>Edad: {{age}}</p>
 <button *ngIf="name!=='Spiderman'" (click)="cambiarNombre()"
